@@ -17,7 +17,6 @@ from langchain.chat_models import init_chat_model
 from langchain_core.language_models import BaseChatModel
 
 from .bedrock_family import BEDROCK_FAMILY_TO_PROVIDER, resolve_bedrock_client
-from .reasoning import ReasoningEffort, apply_reasoning_effort
 from .providers import (
     OPENAI_COMPATIBLE,
     PROVIDERS,
@@ -27,6 +26,7 @@ from .providers import (
     resolve_model_id,
     supported_providers,
 )
+from .reasoning import ReasoningEffort, apply_reasoning_effort
 
 
 class LLMConfigError(ValueError):
